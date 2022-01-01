@@ -459,15 +459,23 @@ body {
 .main-btn{
     background:#157347;
     color: white;
+    border-color: #157347;
 }
 .main-btn:hover{
     background:#105f3a;
     color: white;
+    border-color: #157347;
 }
 .btn.d-flex{
     justify-content: center;
+    background:rgba(28,28,84,1);
+    border-color: rgba(28,28,84,1);
 }
 .btn.d-flex:hover{
     justify-content: center;
     background:rgba(28,28,84,1);
+    border-color: rgba(28,28,84,1);
 }
+
+
+/* about us page  */
