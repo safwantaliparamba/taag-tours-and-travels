@@ -60,7 +60,7 @@
                       </figure>
                 </div> -->
                 <div class="d-flex justify-content-center">
-                <a href="#" class="btn btn-lg mt-5 main-btn">contact us</a>
+                <a href="#enquiry" class="btn btn-lg mt-5 main-btn">contact us</a>
                 </div>
             </div>
     </section>
@@ -542,11 +542,13 @@
 
       <section id="contact-us" class="pt-5">
         <div class="container">
-          <h1 class="text-center ">CONTACT US</h1>
+          <div class="txt">
+          <h1 class="text-center text-light">CONTACT US</h1>
+          </div>
           <div class="row mt-5 p-5">
             <!-- details half  -->
             <div class="col-md-6 col-12 text-center one  mb-5 ">
-          <h1 class="text-center mb-5">Connect with us</h1>
+          <h1 class="text-center mb-5 ">Connect with us</h1>
 
               <!-- one -->
                         <div class="container">
@@ -557,7 +559,9 @@
                               </svg>
                             </div>
                             <div class="one-2 d-flex  align-items-center">
+                              <a href="https://www.google.com/maps/place/Bell+Square/@12.0367131,75.3588134,19z/data=!3m1!4b1!4m5!3m4!1s0x3ba43ff2234097c7:0x8b512ef222452de7!8m2!3d12.0367477!4d75.3594079">
                                 <p>1st floor , Bell square complex <br>Taliparamba  -  670141</p>
+                                </a>
                             </div>
                           </div>
                         </div>
@@ -570,7 +574,9 @@
                               </svg>
                             </div>
                             <div class="one-3 d-flex  align-items-center">
+                              <a href="mailto:taag.co.in@gmail.com">
                                 <p>taag.co.in@gmail.com</p>
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -583,7 +589,9 @@
                               </svg>
                             </div>
                             <div class="one-3 d-flex  align-items-center">
+                              <a href="tel:04602207517">
                                 <p>0460 220 7517</p>
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -596,7 +604,9 @@
                               </svg>
                             </div>
                             <div class="one-3 d-flex  align-items-center">
+                              <a href="tel:+919747597517">
                                 <p>+91 97475 97517</p>
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -609,20 +619,22 @@
                               </svg>
                             </div>
                             <div class="one-3 d-flex  align-items-center">
+                              <a href="tel:+918281032172">
                                 <p>+91 82810 32172</p>
+                              </a>
                             </div>
                           </div>
                         </div>
 
                         <div class="contaner-social">
                           <button class="btn-social">
-                            <a href="">
-                            <i class="fa fa-facebook" style="font-size:35px;"></i>
+                            <a href="https://www.facebook.com/TravelAssistanceAroundtheGlobe">
+                            <i class="fa fa-facebook" style="font-size:25px;"></i>
                             </a>
                           </button>
                           <button class="btn-social">
-                            <a href="">
-                            <i class="fa fa-instagram" style="font-size:35px;"></i>
+                            <a href="https://www.instagram.com/taag.co.in/">
+                            <i class="fa fa-instagram" style="font-size:25px;"></i>
                             </a>
                           </button>
                           <!-- <button class="btn-social">
@@ -631,8 +643,8 @@
                             </a>
                           </button> -->
                           <button class="btn-social">
-                            <a href="">
-                            <i class="fa fa-whatsapp" style="font-size:35px;"></i>
+                            <a href="https://api.whatsapp.com/send?phone=918281032172&app=facebook&entry_point=page_cta&fbclid=IwAR2MUCHm6dA-vMbozNTJxJZ1tIBfJVLfddEGLrRQ3LYaHeLgEFY0pvqNg2Q">
+                            <i class="fa fa-whatsapp" style="font-size:25px;"></i>
                             </a>
                           </button>
                           </div>
@@ -643,22 +655,23 @@
           <h1 class="text-center mb-5">Get in touch</h1>
 
                     <div class="form-header">
-                      <form method="post" data-form-title="CONTACT US" action="">
+                      <form method="post" id="enquiry"  data-form-title="CONTACT US" action="https://formspree.io/f/xbjwlbpz">
                         <input type="hidden" data-form-email="true">
                         <div class="form-group">
                           <input type="text" class="form-control p-3 mb-4" name="name" placeholder="Name*" data-form-field="Name">
                         </div>
                         <div class="form-group">
-                          <input type="email" class="form-control p-3 mb-4" name="email" placeholder="Email*" data-form-field="Email">
+                          <input type="email" class="form-control p-3 mb-4" name="email" placeholder="Email*" data-form-field="Email" name="email">
                         </div>
                         <div class="form-group">
                           <input type="tel" class="form-control p-3 mb-4" name="phone" placeholder="Phone" data-form-field="Phone">
                         </div>
                         <div class="form-group">
-                          <textarea class="form-control p-3 mb-4" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
+                          <textarea class="form-control p-3 mb-4" name="message" placeholder="Message" rows="7" data-form-field="Message" name="message"></textarea>
                         </div>
+                        <p id="my-form-status"></p>
                         <div class=" d-flex justify-content-center">
-                          <button type="submit" class="btn btn-lg  btn-submit">CONTACT US</button>
+                          <button class="btn btn-lg  btn-submit" id="my-form-button">CONTACT US</button>
                         </div>
                       </form>
                     </div>
