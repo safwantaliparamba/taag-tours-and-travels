@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./images/IMG-20211014-WA0021-removebg-preview.png">
     <title>Taag tours and travels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -20,7 +21,7 @@
                     <li><a href="#home">home</a></li>
                     <li><a href="#Services">services</a></li>
                     <li><a href="#">about us</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact-us">Contact</a></li>
                 </ul>
             </div>
             <span class="navTrigger">
@@ -66,7 +67,7 @@
     
     <!-- service section  -->
 
-    <section class="container-fluid service-section" id="Services">
+    <section class="container-fluid service-section pb-5" id="Services">
         <!-- title -->
         <h1 class="pt-5 text-center mb-5">SERVICES</h1>
   
@@ -105,7 +106,7 @@
                   <img
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAjVBMVEX////+/v4AAAD19fX7+/v4+Pjz8/Pv7+/n5+fi4uLs7Ozg4ODq6uoEBATl5eXe3t6wsLDKyspiYmI+Pj6SkpKjo6PT09O3t7coKCh3d3dxcXHMzMzCwsJJSUlsbGxnZ2eHh4dXV1eAgIAcHBybm5sPDw9RUVEhISGOjo43NzdDQ0MUFBQwMDAdHR2oqKgLfqvmAAANG0lEQVR4nO1cCUPiPBNOmkkqiFxyiIKK4u23///nfXP0AsrRUGCXN8/uuljaIfN0rkxSlAoICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI2A6ttNbnHsQ/DWTw3EMI+K8ByGnj6WDy+DgZ9BxaIagLskPWZrs6+HbcgV1nbbpWq4d+lOLt6YE+8mLog7beRR8oeL6J7nqen9C5ZeJu6B/9mHf8bsRfiefobtjYcc7ojgnYddo6iKVBVATxFw3pjctgcEz6zMeGXmvxtYJm/OufRPHnysLx8vuoBC8748U/g4f/MTmTB734ecSohKEeUt2oWlOTxGaiiYf0+9TiihZ4w/zVqsW5oHX8LhqSh3Yw0OUVLv1v3pOQFUUPlWWrRc7e72x2l3vwnwuhj9QYZDouYtW7vQfQUuRqdXWX6HsTPVYVrHUnpet1iBlKQ2Nxk96LaziKNmeAVtO3VKtojv9PlTixVqO3zN9+jK6mMV7+noh9cWmwc/fJreofRZVzABW7ui0Gp7FKwl6vcPBBVazW+HKmbyBxAIMqinhO5HWOo8zpQUrBS2ZmqPDXsEXqdwv1xpBPqyRWPYrAyXKafYqSRHQ5TQTUo7ucIvtj+yfj7sYn6+o48Xyrl9w+lqNvUNWc/16QIVz/FmoL0q9QaMzBw1JGcvlgeZIm7osyR5dDH8UlZR6jAmM3mTXihM36lLlDuXy08kkpreNLqV0yDKNSvLa9pEmS+LDLLGnl5MZ8Xhx9WaFScOMb7yQpxny7TtId0/dy4Fj/PqADz9eNr+dpJjLd/VqpFvHXD37jRV1M5ZwDPrNJWoKpr6iFeL5bIh/TRVPkdi+SPjX9Wapght6ieqWpA/j4DR2/uNjHzefWT9H4fPosAicCnpfqY5Q/kdtzkUtHoBOny2A9JWmV9OhjVSibtWpzRqrcgfg3oNV0pUM39pY0FqLmUIxy8J0mpIvESGZpWeESvXsK0tomEu5V1n7Nprx3vkZdF44w4UaRTSzKksybctj2DFKAhbPImHWSvr8azRK5i3pHXhFaftRMIWiYCXPEYFq/DPyEYcBrpxYcTXoGc8k0X/mIax14ZYAh1Fw5gXrJjG6Qttajj2+v3iaZ271IK8RSmU1TOq536FUGppR1vLzt6mxa6GTSy8pOVaeQPiovcyQoyihQ6B8Q6oBW1mgTt2KjXG2joJ7LQ2ogryO0xD+52TR9B1q6TkkrbWdslQKyZmIsB2IHprYlP60ayV6A6N1h5IJc99HuqzegXWp+UUtVXDipExoMxADO6hhMXXcR64zbJFtMaLUSrIKvxPy8Sz+NwXR1mTfyTEb19fbBQhOcia0x7hCpGpq/g1G6uWCexKV8lttOfG3uaeIo1q0vk0c/PiEHZZmaIj1Y3QTjbGydOYg+DRjubgfc0BskevYK93mcKNyf+I18fQpI6PrcDLwT1tRSa6PzKmfANFGeOySKYJ2nmlTpfS0ayVLRV4PYy2YJyboEqewJ+7tEHQq7hepDJg8xzrjVo5vvQ4lVIW+WbcOCdnFsdNNmew311is3D0rBJM+I0dysDCqZoXqXLsuLxYkoD/rId9fp26Zp8b2EIrJffmktXorhz5adW6UVpLM1SjKyz5Ugp1VL2vf+XT9QKw3sR+WzxFakL1N2Sel1tlauVxTvDC/7oR06Y/gSvX5yhdGxp/IGvpvyoCTGc8i6Tjtfs6Nb1Kw2QD4bY7wDpg+NRvIl/4+hn5bviQ1KA+I5luZjGn83UpYwcQgrMzUhDl/TNhQ+zWqewQmbQJfbfR1Y9vPdc5fls8QsQDYQ/RxSXQ6y5Ou3t4qczjAdSB/Fe0upG8gcOXihGxK/lFlovdXS2ZZZSMo6jHnOMYPEOJ5pMXegEA0x0yfCeY8js5dduA8A52qs321J1MQDfXr3oPbcXe6639UDn0YqqEQjs0EqjcIXGsaLl5G1ncFwjDkZR8mMUVqgk5lB/sMq8Cs6kv1VbKH0BlJPt4EqacOtBDZSMPsPT6W6Xa9bBtqjfTu0OTzK6fPY2KzRYoQUVMpAb/b7Gis3i1672k6jj6hl9fv3cwfnEjiJ0HSuRctKDBDY3cnEkCEjZmkdZl6+B0aoViIf+XRiueD2Nz8uTwY4Y4sW6/TRVJi1j/1nhzz3kOmgz3yDWHAY4ez0+XcI0Ht6HqOLulhjOATTcqjzsP86ANsZtxR5JWqPBBp2aKpUiByHbs7M4buYfbXER/zVADPIXPNhnJEQlXspRqaAs9spzmqn5FlljqXVH1R87D3LpwD9IeHhy0cE+1NHW/i+e3pgG5EAH0uQYoPj/DGM3vpkSI58kJwcQxuVJhzaFJUrHD0p6ilOLOzSiq1SUUjU9HvMNrl/hNHJfvABeW/Z+0Ad9pl/kyTZKXjj0Xugz0RDe37DahH5AkVOh2U3MdG0MeZgKkI4jqExjoafmKRHQBESSTSW6JPQR/Ue8yLlC9MnMVEJiZh90C7xB06HgRqBu9XV6hrtjjeSas4RpS10sp7fDdTuDXbfz4q3gIs1NLKr2eRBc9Bn+qRq4UDGapKPoguRI2qAcTSbKrE+clUU46ykVeDcbbLUkZhlbn3AZ0je1Xs8vdPlki4dq/n43XRigzeaVVF9hQj4INetaMDol4u7yNJcS8KW0Ql9mE7QUmLpuDtJElyRgIm7s4hrEaGPKzuhkawvrXAy+uwKfRaaUg+ZON7hwo43FDTTsarOJu+iRcfBIZsqNLViO/tnn3QqMI36ZEqSM404L9e0SX1CiRRAapSY84KhUkSbRg+EviSpsiU5uYrK5pQ+u2R9OhWLZ8Rx3NyeQFrJPkUGVd3TDZupNHVoD2lwouznvbMuOadW8YL27zZlpk9OxQ0X1pLEodJMHoU3UjnGPBGT/dDcBOwgmjc49lHRIvUfcs5ZlnrMmqYsWoKj4SNUeQMlbqkxAZxD694ySOSaGwKnaJtr2Re+9+m8E+ZeJQ+ZIFMU1amLiwQ5npolBR6VeGRLTCUFP3pFtUo3mtMMBeSk5KOZcsq+SiyMeKeDch1HBTZzEurQ/LZYDLnA1fzn278TXwHAzzrsfTrG7saiLUkNQFKF5QQHeVxPprDky3QYoxwRB9xNQXOLnaYQBlams9IeAMqvFIU0pR06mctq4ATEu/+5eCFf13Zbe5Y6BZh14xMteclzIjvPYoa6dz9Qy1KIfp+Yo61JjXAmdqoFm/104F4SZqlZr5aFDU0Lr60jqdiKft3Jlgu1ag0me6w4XU/R+to1rQthtLh+ah5JRTNonu7RALDUddnYrBKnVc3H6I2jfD3DSvNFXFh/qEWsVqfeGctPKH1tbEPK4d7PwtW/gD6ghZr61KX73JufnD4s0O82ZwQzfAG9x/cqeMA9USupvu0YgMX86ob3I0PbV14xgdWoJs8K0pykb1X6GGzNn626o0rrP9ulIb7mJ34gClT7eT4GKWCWR6NMQ0Fj0DneI4Lc4arnGTDxj9hjqfUgJEMfR+PVyUfnMfphSo/HnuYnwZ5sLbWQ6RpaHz+t9UlLTF99R/18DV6NmtSKHTRko+cxjY8+513JVw0cIAhU6yu6OuJYtwLv2XSs0eBeBmgKT9EJ63Y08ylH3gPshizg9W10ts11PHbQnV/eotZdPDgAn0dd/T4bP3l64BwV0GHO9xi3lq85SV7Tj5Oxx+Wa4+9p8BYx6iZfdXMm+s4MrRq3GLn87hjoxamrvb8NlK18rU+PopfjtW/+BXDyB9V9cbvPXQPAldfepotDlyIg7BfCeN1A26H3/uQLxFV/mBSDO0HNbqW+okfPZwsuELIpoLvnpidaMR8/XOLDs77gLzSaRbedjS7M9TVCdV4O2Bl6sSDaurOe2tTgEVLx32/03Dr14P4BSMtE69nXojSqaTX6/O3RDpETD+wfAdscqOmcNqlcja9Nsm0T7a7dm/LzKE+NEPG2gvdvWX725MMo6L+TP9NjkZY2Sp57dH87pIym74/rTOk7C+/n/QcFrXGnycEx1Mg7oNNGpJKWgsqfU9izLgwICAgICAgICAgICAgICAgICAg4APq4OLd6x4Y3GZfIX3XzAMbWN3OUv+cheAfOSF1xyPn4S3SVX1cZqh9llO7ivmgIx+GqzNLyEeXjs+swO+G2IY7jssMbha1+vAxqicCcxhVC1RGIXKFrmZRMRUGziBbjqoh2hkZdEHH5R7RS5APBcS3dhFWeS4xT1cag1vLVF/xNQBlXe7K0F1HXqyge6jDWT0n/lHApdOakrtOZY8mSczYzu6yDQRDTK9rdkneVm15GbUJvCc97YNW6ytEqormOJbrKzbDMButEIeoVwt2uUFcWzFZQerACNkfI9SC5ytUSZWqlmqiVviUWYS2t7omS5HI0bB5FSSbU6YL7MUjbRWclVKG7IiqN47RE7YAHj+fEuemqAUcg4jKICQgICAgICAgICAgICAgICAgICDgD/g+DJpUl5dn3sAAAAABJRU5ErkJggg=="
                     class="card-img-top"
-                    alt="..."
+                    alt="..." loading="lazy"
                   />
                   <div class="card-body">
                     <h5 class="card-title d-flex justify-content-center">flight tickets</h5>
@@ -537,10 +538,133 @@
         
   
       </section>
-      <!-- about us section  -->
+      <!-- contact us section  -->
 
-      <section>
-        
+      <section id="contact-us" class="pt-5">
+        <div class="container">
+          <h1 class="text-center ">CONTACT US</h1>
+          <div class="row mt-5 p-5">
+            <!-- details half  -->
+            <div class="col-md-6 col-12 text-center one  mb-5 ">
+          <h1 class="text-center mb-5">Connect with us</h1>
+
+              <!-- one -->
+                        <div class="container">
+                          <div class="row">
+                            <div class="one-1 d-flex justify-content-center align-items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                              </svg>
+                            </div>
+                            <div class="one-2 d-flex  align-items-center">
+                                <p>1st floor , Bell square complex <br>Taliparamba  -  670141</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- two -->
+                        <div class="container">
+                          <div class="row">
+                            <div class="one-1 d-flex justify-content-center align-items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                              </svg>
+                            </div>
+                            <div class="one-3 d-flex  align-items-center">
+                                <p>taag.co.in@gmail.com</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- three -->
+                        <div class="container">
+                          <div class="row">
+                            <div class="one-1 d-flex justify-content-center align-items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                              </svg>
+                            </div>
+                            <div class="one-3 d-flex  align-items-center">
+                                <p>0460 220 7517</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- four -->
+                        <div class="container">
+                          <div class="row">
+                            <div class="one-1 d-flex justify-content-center align-items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                                <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                              </svg>
+                            </div>
+                            <div class="one-3 d-flex  align-items-center">
+                                <p>+91 97475 97517</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- fifth -->
+                        <div class="container">
+                          <div class="row">
+                            <div class="one-1 d-flex justify-content-center align-items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                                <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                              </svg>
+                            </div>
+                            <div class="one-3 d-flex  align-items-center">
+                                <p>+91 82810 32172</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="contaner-social">
+                          <button class="btn-social">
+                            <a href="">
+                            <i class="fa fa-facebook" style="font-size:35px;"></i>
+                            </a>
+                          </button>
+                          <button class="btn-social">
+                            <a href="">
+                            <i class="fa fa-instagram" style="font-size:35px;"></i>
+                            </a>
+                          </button>
+                          <!-- <button class="btn-social">
+                            <a href="">
+                            <i class="fa fa-twitter" style="font-size:35px;"></i>
+                            </a>
+                          </button> -->
+                          <button class="btn-social">
+                            <a href="">
+                            <i class="fa fa-whatsapp" style="font-size:35px;"></i>
+                            </a>
+                          </button>
+                          </div>
+
+            </div>
+            <!-- enquire half  -->
+            <div class="col-md-6 col-12 two  mb-5">
+          <h1 class="text-center mb-5">Get in touch</h1>
+
+                    <div class="form-header">
+                      <form method="post" data-form-title="CONTACT US" action="">
+                        <input type="hidden" data-form-email="true">
+                        <div class="form-group">
+                          <input type="text" class="form-control p-3 mb-4" name="name" placeholder="Name*" data-form-field="Name">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control p-3 mb-4" name="email" placeholder="Email*" data-form-field="Email">
+                        </div>
+                        <div class="form-group">
+                          <input type="tel" class="form-control p-3 mb-4" name="phone" placeholder="Phone" data-form-field="Phone">
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control p-3 mb-4" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
+                        </div>
+                        <div class=" d-flex justify-content-center">
+                          <button type="submit" class="btn btn-lg  btn-submit">CONTACT US</button>
+                        </div>
+                      </form>
+                    </div>
+            </div>
+          </div>
+        </div>
       </section>
 
 
@@ -554,14 +678,7 @@
 
 <!-- Function used to shrink nav bar removing paddings and adding black background -->
     <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
+       
     </script>
     <script src="./app.js"></script>
 </body>
