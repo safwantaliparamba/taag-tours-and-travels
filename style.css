@@ -400,6 +400,8 @@ body {
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(28,28,84,1) 91%);
     color: #e5edf1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* .service-container{
@@ -525,9 +527,21 @@ body {
 @media only screen and (max-width:768px) {
     .one{
         height: 700px;
+        background-color: rgba(17, 25, 40, 0.57);
+        border-radius:none;
+        border: none;
+        padding-top: 5rem;
+        margin: none;
+        padding: none;
     }
     .two{
         height: 600px;
+        background-color: rgba(17, 25, 40, 0.57);
+        border-radius:none;
+        border: none;
+        padding-top: 5rem;
+        margin: none;
+        padding: none;
     }
 }
 
@@ -685,11 +699,6 @@ background: linear-gradient(270deg, rgba(12,12,68,1) 16%, rgba(2,0,36,1) 91%);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
-@media only screen and (max-width:768px) {
-    .about-glass{
-        height: auto;
-    }
-}
 /* .content{
     display: flex;
     justify-content: center;
@@ -710,8 +719,24 @@ background: linear-gradient(270deg, rgba(12,12,68,1) 16%, rgba(2,0,36,1) 91%);
     border-radius: 50%;
     height: 15rem;
     width:15rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width:768px) {
+    .about-glass{
+        height: auto;
+    }
+    .about-glass{
+    height: auto;
+    /* width: 80%; */
+    padding: 5rem;
+    background-color: rgba(4, 19, 49, 0.54);
+    border-radius: none;
+    border: none;
+}
     
 }
+.content{margin: auto;}
 .content h1.text-center{
     text-transform:uppercase;
     margin:0 auto;
